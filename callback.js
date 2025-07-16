@@ -1,40 +1,40 @@
 
 
-// waitWithCallback(displayCallback)
+waitWithCallback(displayCallback)
 
-// function waitWithCallback(callback){
-//   console.log("Start the Callback");
+function waitWithCallback(callback){
+  console.log("Start the Callback");
 
-//   setTimeout(
-//     () => {
-//       callback("Will be executed post a delay !!!");
-//     }
-//    , 3000)
+  setTimeout(
+    () => {
+      callback("Will be executed post a delay !!!");
+    }
+   , 3000)
 
-//    console.log("Waiting for 3secs !!! ")
+   console.log("Waiting for 3secs !!! ")
 
-// }
+}
 
-// function displayCallback(msg){
-//   console.log(msg);
-// }
+function displayCallback(msg){
+  console.log(msg);
+}
 
 //-----------------------------------------------------------------------------------------
 
-function waitWithCallback(ms, callback) {
- setTimeout(() => {
-   callback(`⏳ Waited ${ms}ms (callback)`);
- }, ms);
-}
+// function waitWithCallback(ms, callback) {
+//  setTimeout(() => {
+//    callback(`⏳ Waited ${ms}ms (callback)`);
+//  }, ms);
+// }
 
-function displayCallbackMsg(msg){
-  console.log(msg);
- console.log("End (callback)");
-}
+// function displayCallbackMsg(msg){
+//   console.log(msg);
+//  console.log("End (callback)");
+// }
 
-console.log("Start (callback)");
+// console.log("Start (callback)");
 
-waitWithCallback(3000, displayCallbackMsg).  // same as below commented waitWithCallback
+// waitWithCallback(3000, displayCallbackMsg)  // same as below commented waitWithCallback
 
 // waitWithCallback(3000, (msg) => {
 //  console.log(msg);
